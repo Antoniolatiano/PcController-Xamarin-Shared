@@ -30,6 +30,16 @@ namespace ProvaXamarin
 			Console.WriteLine("Started listening");
 			udp.BeginReceive((ar) => Device.BeginInvokeOnMainThread(() => callback(ar)), udp);
 		}
+
+		public void Send(string serverip,string message)
+		{
+			UdpClient client = new UdpClient();
+			IPEndPoint ip = new IPEndPoint(IPAddress.Parse(serverip), PORT_NUMBER);
+			byte[] bytes = Encoding.ASCII.GetBytes(message);
+			client.Send(bytes, bytes.Length, ip);
+			client.Close();
+			Console.WriteLine("[UDP] Sent: {0} ", message);
+		}
 	}
 }
 
