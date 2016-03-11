@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PcRemoteController", "ProvaXamarin\PcRemoteController.shproj", "{02FB7EB8-F52A-4992-AC87-6A2B6179DEAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcRemoteController.Droid", "Droid\PcRemoteController.Droid.csproj", "{168412BE-AB6C-490D-B8C9-60360BB91713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{168412BE-AB6C-490D-B8C9-60360BB91713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168412BE-AB6C-490D-B8C9-60360BB91713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168412BE-AB6C-490D-B8C9-60360BB91713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168412BE-AB6C-490D-B8C9-60360BB91713}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
